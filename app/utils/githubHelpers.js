@@ -18,7 +18,6 @@ function getTotalStars(repos) {
 }
 
 async function getPlayersData(player) {
-  console.log(player)
   try {
     const repos = await getRepos(player.login)
     const totalStars = await getTotalStars(repos)
